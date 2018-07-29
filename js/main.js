@@ -1,11 +1,13 @@
 const table = document.querySelector('.table');
+const btn = document.querySelector('.btn');
 let amazon = null;
+let ebay = null;
+
 const amazonTmp = document.querySelector('.js-amaz');
 amazonTmp.addEventListener('blur', (e) => {
   amazon = amazonTmp.value.split('\n');
 });
 
-let ebay = null;
 const ebayTmp = document.querySelector('.js-ebay');
 ebayTmp.addEventListener('blur', (e) => {
   ebay = ebayTmp.value.split('\n');
@@ -63,6 +65,5 @@ function open(amaz, eb) {
   });
 }
 
-const btn = document.querySelector('.btn');
 btn.onclick = e => open(amazon, ebay);
 table.addEventListener('mousedown', colored);
