@@ -17,7 +17,7 @@ amazonTmp.addEventListener('blur', (e) => {
 
 const ebayTmp = document.querySelector('.js-ebay');
 ebayTmp.addEventListener('blur', (e) => {
-  ebay = ebayTmp.value.split(' ');
+  ebay = ebayTmp.value.split('\n');
   ebay = ebay.map((elem) => {
     // если в строке  больше одной ссылки, создаёт массив по разделителю "||"
     if (elem.lastIndexOf('http') > 10) return elem.split('||');
