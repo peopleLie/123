@@ -87,48 +87,17 @@ function open(amaz, eb) {
           tmpTd.appendChild(z);
           z.setAttribute('href', arr[i][j]);
           z.setAttribute('target', '_blank');
-          // z.textContent = `e-bay: ${arr[i][j]}`;
-          x.textContent = '<<<<<<< e-bay >>>>>>>';
+          z.textContent = `e-bay: ${arr[i][j]}`;
         }
       } else { // если элемент массива строка
         table.rows[i].insertCell(-1);
-        // x.textContent = `e-bay: ${arr[i]}`;
-        x.textContent = '<<<<<<< e-bay >>>>>>>';
+        x.textContent = `e-bay: ${arr[i]}`;
         table.rows[i].cells[2].append(x);
       }
     }
   });
 }
 
-// const qwe2 = [
-//   'https: //goo.gl/EG3zLN || https://goo.gl/nqBKFY',
-//   'https: //goo.gl/hzNjfa',
-//   'https: //goo.gl/keFKwB',
-//   'https: //goo.gl/XJqsfu',
-//   'https: //goo.gl/A6pXtv',
-//   'https: //goo.gl/Suhpmn',
-//   'https: //goo.gl/A77C4c',
-//   'https: //goo.gl/nEVMHt || https://goo.gl/MY6goe',
-//   'https: //goo.gl/2td8WD',
-//   'https: //goo.gl/rh9Npu',
-//   'https: //goo.gl/kWCP6A || https://goo.gl/8u35iq',
-// ];
-
-// const qwe = [
-//   'https: //www.amazon.com/dp/B01J4SC5QU',
-//   'https: //www.amazon.com/dp/B00EZFPDO4',
-//   'https: //www.amazon.com/gp/product/B074MJ65P7',
-//   'https: //www.amazon.com/dp/B01C3Q8Q2M',
-//   'https: //www.amazon.com/dp/B01EU769TO',
-//   'https: //www.amazon.com/dp/B00P6RCOKQ',
-//   'https: //www.amazon.com/dp/B013CTV0OU',
-//   'https: //www.amazon.com/dp/B017IS057O',
-//   'https: //www.amazon.com/dp/B01J5LE0R8',
-//   'https: //www.amazon.com/dp/B01DZZJVR4',
-//   'https: //www.amazon.com/dp/B014LXSTTU',
-// ];
-
 btn.onclick = e => open(amazon, ebay);
-// btn.onclick = e => open(qwe, qwe2);
 clearBtn.onclick = clear;
 table.addEventListener('mousedown', colored);
