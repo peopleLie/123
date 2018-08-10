@@ -91,7 +91,8 @@ function open(amaz, eb) {
         }
       } else { // если элемент массива строка
         table.rows[i].insertCell(-1);
-        x.textContent = `e-bay: ${arr[i]}`;
+        // x.textContent = `e-bay: ${arr[i]}`;
+        x.textContent = '-e-bay-';
         table.rows[i].cells[2].append(x);
       }
     }
