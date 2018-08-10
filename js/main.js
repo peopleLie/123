@@ -87,12 +87,13 @@ function open(amaz, eb) {
           tmpTd.appendChild(z);
           z.setAttribute('href', arr[i][j]);
           z.setAttribute('target', '_blank');
-          z.textContent = `e-bay: ${arr[i][j]}`;
+          // z.textContent = `e-bay: ${arr[i][j]}`;
+          x.textContent = '======= e-bay ========';
         }
       } else { // если элемент массива строка
         table.rows[i].insertCell(-1);
         // x.textContent = `e-bay: ${arr[i]}`;
-        x.textContent = '-e-bay-';
+        x.textContent = '======= e-bay ========';
         table.rows[i].cells[2].append(x);
       }
     }
