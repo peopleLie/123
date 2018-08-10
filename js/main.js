@@ -98,51 +98,6 @@ function open(amaz, eb) {
   });
 }
 
-const qwe = [
-  'https: //www.amazon.com/dp/B0024MKPUC',
-  'https: //www.amazon.com/dp/B014U51A8G',
-  'https: //www.amazon.com/dp/B004HW88VU',
-  'https: //www.amazon.com/dp/B004HW88W4',
-  'https: //www.amazon.com/dp/B00ER09BW2',
-  'https: //www.amazon.com/dp/B017L7RO26',
-  'https: //www.amazon.com/dp/B01G43EU02',
-  'https: //www.amazon.com/dp/B003DQVWEQ',
-  'https: //www.amazon.com/dp/B00EV9KE48',
-  'https: //www.amazon.com/dp/B01J4SC5QU',
-  'https: //www.amazon.com/dp/B00EZFPDO4',
-  'https: //www.amazon.com/gp/product/B074MJ65P7',
-  'https: //www.amazon.com/dp/B01C3Q8Q2M',
-  'https: //www.amazon.com/dp/B01EU769TO',
-  'https: //www.amazon.com/dp/B00P6RCOKQ',
-  'https: //www.amazon.com/dp/B013CTV0OU',
-  'https: //www.amazon.com/dp/B017IS057O',
-  'https: //www.amazon.com/dp/B01J5LE0R8',
-  'https: //www.amazon.com/dp/B01DZZJVR4',
-];
-
-const qwe2 = [
-  'https: //goo.gl/xofHBm;',
-  'https: //goo.gl/ngbaBu;',
-  'https: //goo.gl/q3DVRV;',
-  'https: //goo.gl/ouZekQ;',
-  'https: //goo.gl/6xyQ2A;',
-  'https: //goo.gl/gWkpVZ;',
-  'https: //goo.gl/cRUkpz;',
-  'https: //goo.gl/NqbrVw;',
-  'https: //goo.gl/gbxSRY;',
-  'https: //goo.gl/EG3zLN;',
-  'https: //goo.gl/hzNjfa;',
-  'https: //goo.gl/keFKwB;',
-  'https: //goo.gl/XJqsfu;',
-  'https: //goo.gl/A6pXtv;',
-  'https: //goo.gl/Suhpmn;',
-  'https: //goo.gl/A77C4c;',
-  'https: //goo.gl/nEVMHt;',
-  'https: //goo.gl/2td8WD;',
-  'https: //goo.gl/rh9Npu;',
-];
-
-
-btn.onclick = e => open(qwe, qwe2);
+btn.onclick = e => open(amazon, ebay);
 clearBtn.onclick = clear;
 table.addEventListener('mousedown', colored);
