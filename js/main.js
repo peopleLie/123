@@ -34,7 +34,6 @@ function colored(e) {
     e.target.closest('tr').classList.remove('pedding');
     e.target.closest('tr').classList.remove('active');
     e.target.closest('tr').classList.add('error');
-    e.target.oncontextmenu = event => event.preventDefault();
   } else if (e.which === 2) {
     e.target.closest('tr').classList.remove('active');
     e.target.closest('tr').classList.remove('error');
