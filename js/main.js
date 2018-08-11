@@ -50,14 +50,9 @@ function clear(e) {
 
 function open(amaz, eb) {
   // проверка на номер строки
-  if (stringNumber === null) {
-    stringNumberTmp.style.outline = '3px solid red';
-    return alert('введите номер строки');
-  }
-  stringNumberTmp.style.outline = '';
+  if (stringNumber === null) stringNumber = 2;
   clearBtn.hidden = false;
   btn.hidden = true;
-
 
   const array = [amaz, eb]; // создание двумерного массива
 
