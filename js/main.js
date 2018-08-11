@@ -27,16 +27,14 @@ ebayTmp.addEventListener('blur', (e) => {
 
 function colored(e) {
   if (e.which === 1) {
-    e.target.closest('tr').classList.remove('pedding');
+    e.target.closest('tr').classList = '';
     e.target.closest('tr').classList.add('active');
     e.target.onclick = event => event.preventDefault();
   } else if (e.which === 3) {
-    e.target.closest('tr').classList.remove('pedding');
-    e.target.closest('tr').classList.remove('active');
+    e.target.closest('tr').classList = '';
     e.target.closest('tr').classList.add('error');
   } else if (e.which === 2) {
-    e.target.closest('tr').classList.remove('active');
-    e.target.closest('tr').classList.remove('error');
+    e.target.closest('tr').classList = '';
     e.target.closest('tr').classList.add('pedding');
     e.target.oncontextmenu = event => event.preventDefault();
   }
